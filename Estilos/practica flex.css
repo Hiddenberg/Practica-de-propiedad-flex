@@ -1,0 +1,141 @@
+body {
+   background-color: rgb(230, 243, 255);
+}
+
+strong{
+   color: rgb(73, 213, 255);
+}
+
+h1 {
+   text-align: center;
+}
+
+h2 {
+   color: steelblue;
+   margin-top: 2em;
+   margin-bottom: 0.3em;
+}
+
+section{
+   display: flex; /* usando solo esta priopiedad nos permite alinear elementos de forma horizontal de forma dinamica (flexible)  /* esta propiedad se encarga de elegir como se distribuyen la cajas para ajustarse al tamaño de la pantalla (incluso el espaciado*/
+   /* ↑ El limite de este encogimiento se puede determinar con el ancho y largo de las cajas (vease ejemplo en la pagina principal)*/
+   flex-wrap: wrap;
+   border: 5px double steelblue;
+   border-radius: 5px;
+   padding: 5px;
+   background-color:  rgb(206, 231, 255);
+}
+
+.box-container {
+   justify-content: unset;
+}
+.box-containerCenter {
+   justify-content: center;
+}
+.box-containerLeft {
+   justify-content: flex-start;
+}
+.box-containerRight {
+   justify-content: flex-end;
+}
+
+.box-containerBetween {
+   justify-content: space-between;
+}
+
+.box-containerEvenly {
+   justify-content: space-evenly;
+}
+
+.box-containerArround {
+   justify-content: space-around;
+}
+
+.box-containerResizeSmaller {
+   
+   flex-wrap: nowrap;
+}
+
+.box-containerResizeBigger {
+   
+   flex-wrap: nowrap;
+}
+
+.box-containerResize {
+   
+   flex-wrap: nowrap;
+}
+
+.box-containerVerticalColumnStart {
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.box-containerVerticalColumnCenter {
+   flex-direction: column;
+   align-items: center;
+}
+
+.box-containerVerticalColumnEnd {
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+/* NOTA: algunas propiedades para flex deben configurarse desde el elemento padre (como display y wrap), mientras otras deben configurarse
+desde el elemento hijo (como shrink o grow) */
+.box {
+   width: 100px;
+   height: 100px;
+   border: 20px ridge rgb(70, 175, 122);
+   flex-shrink: 0; /* con esta propiedad se impide que las cajas flexibles (que son hijos) se encojan, (solo acepta valores de 1 o 0) */
+   flex-grow: 0; /* esta otra propiedad permite que las cajas se estiren a lo ancho que tengan disponible */
+   /* margin: 5px 5px; */ /* en modo flex los margenes si se suman */
+   box-sizing: border-box;
+}
+
+.box-containerResizeSmaller .box {
+   width: 200px;
+   height: 200px;
+   flex-shrink: 1; /* con esta propiedad se impide que las cajas flexibles (que son hijos) se encojan, (solo acepta valores de 1 o 0) */
+   flex-grow: 0;
+}
+
+.box-containerResizeBigger .box {
+   width: 200px;
+   height: 200px;
+   flex-shrink: 0;
+   flex-grow: 1;
+}
+
+.box-containerResize .box {
+   width: 200px;
+   height: 200px;
+   flex-shrink: 1;
+   flex-grow: 1;
+}
+/* NOTA: estas distribuciones flexibles parecen solo afectar al ancho y no al alto de los elementos */
+
+.box-containerVertical {
+   height: 300px;
+}
+
+#top {
+   align-items: flex-start;
+}
+
+#center {
+   align-items: center;
+}
+
+#bottom {
+   align-items: flex-end;
+}
+
+#finalNotes {
+   color: violet;
+   margin: 40px 0;
+   text-align: center;
+}
+
+
+/* USAR ALIGN-CONTENT PARA QUITAR LOS ESPACIOS CUANDO SE HACE EL ALINEADO EN FLEX VERTICAL */

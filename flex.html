@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="icon" href="./Imagenes/Logo.png" type="image/png"> <!-- Agregando el icono para la pestaña de la pagina -->
+   <link rel="stylesheet" href="./Estilos/practica flex.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Practica Flex</title>
+</head>
+<body>
+   <header>
+      <h1>Practica Flex</h1>
+   </header>
+   <h2>Distribucion por defecto</h2>
+   <section class="box-container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion centrada</h2>
+   <section class="box-containerCenter">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion alineada al final del bloque flex</h2>
+   <section class="box-containerRight">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion con space "between" <strong>(no agrega espacios al principio ni al final)</strong></h2>
+   <section class="box-containerBetween">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion con space "evenly" <strong>(distribuye TODOS los espacios de forma igual y puede servir para simular el margin colapsing)</strong></h2>
+   <section class="box-containerEvenly">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion con space "around" <strong>(este tambien distribuye los espacios pero no de forma tan estricta como evenly)</strong></h2>
+   <section class="box-containerArround">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion por defecto con solo <strong>agrandamiento</strong> de los elementos</strong></h2>
+   <section class="box-containerResizeBigger">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion por defecto con solo <strong>encogimiento (con propiedad "no wrap" en el elemento padre)</strong> de los elementos</strong></h2>
+   <section class="box-containerResizeSmaller">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Distribucion por defecto con <strong>cambio de tamaño de los elementos</strong></h2>
+   <section class="box-containerResize">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Muestra de alineamiento vertical con la propiedad <strong>align items: start</strong></h2>
+   <section class="box-containerVertical" id="top">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Muestra de alineamiento vertical con la propiedad <strong>align items: center</strong></h2>
+   <section class="box-containerVertical" id="center">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Muestra de alineamiento vertical con la propiedad <strong>align items: end</strong></h2>
+   <section class="box-containerVertical" id="bottom">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+<!-- h2.notasFinales*10{notasfinales numero$} --> <!-- FORMA GENIAL PARA PROGRAMAR MULTIPLES BLOQUES IGUALES DE FORMA MAS RAPIDA -->
+
+<h2 id="finalNotes">
+   *** <strong>"Justify content"</strong> se usa de forma horizontal y <strong>"Align items</strong> de forma vertical***
+</h2>
+
+   <h2 id="finalNotes">
+      *** Como nota final cabe destacar que se pueden combinar ambas tecnicas para centrar, o alinear en diferentes partes de un documento ***
+   </h2>
+
+   <h2>Muestra de alineamiento vertical con la propiedad <strong>direccion en "item alineado al inicio"</strong></h2>
+   <section class="box-containerVerticalColumnStart">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+   
+   <h2>Muestra de alineamiento vertical con la propiedad <strong>direccion en "item alineado al centro"</strong></h2>
+   <section class="box-containerVerticalColumnCenter">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+
+   <h2>Muestra de alineamiento vertical con la propiedad <strong>direccion en "item alineado al final"</strong></h2>
+   <section class="box-containerVerticalColumnEnd">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </section>
+</body>
+</html>
